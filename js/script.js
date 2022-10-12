@@ -1,0 +1,21 @@
+function hideSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const profilesidebar = document.getElementById("profile-sidebar")
+    const main = document.getElementById("main")
+    if (sidebar.classList.contains("col-lg-1") || profilesidebar.classList.contains("d-none")) {
+        main.classList.add("col-lg-10")
+        sidebar.classList.add("col-lg-2");
+        profilesidebar.classList.remove("d-none")
+        sidebar.classList.remove("col-lg-1");
+        main.classList.remove("col-lg-11");
+      
+    } else {
+        sidebar.classList.remove("col-lg-2")
+        main.classList.remove("col-lg-10")
+        profilesidebar.classList.add("d-none")
+        sidebar.classList.add("col-lg-1");
+        main.classList.add("col-lg-11");
+      
+    }
+    console.log("test");
+  }
