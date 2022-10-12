@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #fff !important;
+}
+
+section#sidebar {
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
