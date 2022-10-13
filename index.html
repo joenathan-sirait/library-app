@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+    <link rel="icon" type="image/x-icon" href="./img/Lembur.jpeg">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -17,6 +17,19 @@
 </head>
 
 <body>
+  <div class="modal fade" id="exampleModalsucces" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header border border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center my-5">
+            <img src="./img/check.png" class="mb-3" width="150" alt="">
+            <p class="fs-4">Data  <span class="fw-bold">Dilan 1990</span> berhasil dipinjam</p>
+        </div>
+    </div>
+    </div>
+</div>  
      <!-- Modal -->
      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -44,7 +57,7 @@
             </div>
             <div class="modal-footer">
 
-            <button type="button" class="btn btn-warning text-light">Save changes</button>
+            <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModalsucces" class="btn btn-warning text-light">Save changes</button>
             </div>
         </div>
         </div>
@@ -65,7 +78,7 @@
                     <p class="fw-bold fs-5 text-center">Joenathan Sirait</p>
                     <a href="login.html" class="btn btn-sm text-center"><i class="bi bi-box-arrow-right"></i>Logout</a>
                 </div>
-                <div class="row  m-3">
+                <div id="action-sidebar" class="row  m-3">
                         <a class="btn text-start" href="#">Explore</a>
                         <a class="btn text-start" href="#"> History</a>
                         <a class="btn text-start" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">Add book</a>
@@ -110,7 +123,8 @@
                           <li>
                             <form class="d-flex" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                <button class="btn btn-outline" type="submit"><i class="bi bi-search"></i></button>
+                         
                               </form>
                           </li>
     
@@ -129,21 +143,21 @@
                         <div id="carouselExampleControlsNoTouching" class="carousel slide text-dark" data-bs-touch="false">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="./img/dilan.jpeg" width="500" alt="...">
+                               <a href="detail.html"><img src="./img/dilan.jpeg" width="500" alt="..."></a> 
                               </div>
                               <div class="carousel-item">
-                                <img src="./img/Lembur.jpeg"  width="500" alt="...">
+                                <a href="detail.html"><img src="./img/Lembur.jpeg" width="500" alt="..."></a> 
                               </div>
                               <div class="carousel-item">
-                                <img src="./img/dilan.jpeg"width="500" alt="...">
+                                <a href="detail.html"><img src="./img/dilan.jpeg" width="500" alt="..."></a> 
                               </div>
                             </div>
                             <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                            <p class="text-light fs-3 bg-dark p-2 rounded-circle text-start"> < </p>
+                            <i class="bi fs-2 fw-bold bi-arrow-left-circle"></i>
                               <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                              <p class="text-light fs-3 bg-dark p-2 rounded-circle text-start"> > </p>
+                            <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                              <i class="bi fs-2 fw-bold bi-arrow-right-circle"></i>
                               <span class="visually-hidden">Next</span>
                             </button>
                           </div>
@@ -151,10 +165,10 @@
                     <div class="row my-5 ms-3">
                         <h1>List Book</h1>
                     </div>
-                    <div class="row">
+                    <div class="row ms-5">
                         <div class="col-4">
                             <div class="card" style="width: 18rem;">
-                                <img src="./img/dilan.jpeg" class="card-img-top" alt="...">
+                               <a href="./detail.html"> <img src="./img/dilan.jpeg" class="card-img-top" alt="..."></a>
                                 <div class="card-body">
                                   <h5 class="card-title text-center">Card title</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -164,7 +178,7 @@
                         </div>
                         <div class="col-4">
                             <div class="card" style="width: 18rem;">
-                                <img src="./img/Lembur.jpeg" class="card-img-top" alt="...">
+                              <a href="./detail.html"> <img src="./img/Lembur.jpeg" class="card-img-top" alt="..."></a>
                                 <div class="card-body">
                                   <h5 class="card-title text-center">Card title</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -174,7 +188,7 @@
                         </div>
                         <div class="col-4">
                             <div class="card" style="width: 18rem;">
-                                <img src="./img/dilan.jpeg" class="card-img-top" alt="...">
+                              <a href="./detail.html"> <img src="./img/dilan.jpeg" class="card-img-top" alt="..."></a>
                                 <div class="card-body">
                                   <h5 class="card-title text-center">Card title</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

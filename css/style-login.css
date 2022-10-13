@@ -36,6 +36,10 @@
   bottom: 0;
 }
 
+form {
+  width: 380px;
+}
+
 /* flex fill -> flex: 1; */
 
 @media (max-width: 760px) {
