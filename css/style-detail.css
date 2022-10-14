@@ -6,3 +6,10 @@
     background-size: cover;
 }
 
+@media (max-width: 768px) {
+    #borrow {
+        margin-bottom: 50px;
+        position: static !important;
+    }
+    
+}

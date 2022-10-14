@@ -4,10 +4,31 @@
 
 
 
+
+
+
 #sidebar {
     position: sticky;
     height: 100vh;
     top: 0;
     left: 0;
+}
+.card {
+
+    width: 18rem;
+}
+
+@media (max-width: 768px) {
+    .card {
+   
+        width: 14rem;
+    }
+
+    #profile-sidebar p {
+        text-align: center;
+        font-size: 12px!important;
+    }
+
+    
 }
 

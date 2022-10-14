@@ -42,8 +42,16 @@ form {
 
 /* flex fill -> flex: 1; */
 
-@media (max-width: 760px) {
-  .left {
+@media (max-width: 768px) {
+  .right {
+    padding-left: 100px;
+  }
+  
+  form {
+    width: 500px;
+    height: 400px;
+  }
+  .login-wrapper .left {
     display: none;
   }
 }
