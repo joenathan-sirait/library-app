@@ -24,5 +24,5 @@ function hideSidebar() {
         main.classList.add("col-lg-11");
       
     }
-    console.log("test");
+
   }
