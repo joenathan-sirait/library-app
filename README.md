@@ -1,11 +1,11 @@
 
-** LIBRARY APP **
+## LIBRARY APP 
 
 *library web is made for reader fans who want practical and easy access, this web is made to borrow books very easily and quickly*
 
 ## HOW TO USE THIS WEBSITE
 
-### IF YOU ARE A USER
+
 
 1. create an account on the register page
 2. login on the login page with the username and password you created on the registration page
@@ -22,4 +22,4 @@ click book to see details
 5. Sort by
 6. Search book
 
-** THANKS AND HAPPY BORROWED ""
+## THANKS AND HAPPY BORROWED
