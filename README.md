@@ -25,4 +25,4 @@ click book to see details
 ## THANKS AND HAPPY BORROWED
 
 ## HERE THE LINK LIBRARY APP
-[index](https://joenathan-sirait.github.io/library-app/)
+[Library APP](https://joenathan-sirait.github.io/library-app/)
