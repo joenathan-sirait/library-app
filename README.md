@@ -1,5 +1,5 @@
 
-** # LIBRARY APP **
+** LIBRARY APP **
 
 *library web is made for reader fans who want practical and easy access, this web is made to borrow books very easily and quickly*
 
@@ -22,4 +22,4 @@ click book to see details
 5. Sort by
 6. Search book
 
-** THANKS AND HAPPY BORROWED
+** THANKS AND HAPPY BORROWED ""
